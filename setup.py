@@ -39,6 +39,7 @@ setup(
         "pandas >= 0.18.0",
         "h5py >= 2.6.0",
         "scikit-learn == 0.19.0",
-        "numpy >= 1.14.1",
+        "numpy >= 1.14.1",,
+        "rpy2 >= 2.8.6"
     ]
 )
