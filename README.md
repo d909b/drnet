@@ -48,6 +48,7 @@ License: MIT, see LICENSE.txt
         - The original experiments reported in our paper were run on Intel CPUs. We found that running the experiments on GPUs can produce slightly different results for the same experiments.
 - Once you have completed the experiments, you can calculate the summary statistics (mean +- standard deviation) over all the repeated runs using the `./run_results.sh` script. The results are reported in LaTeX syntax in the order reported in the results tables, i.e. `{12.2} $\pm$ 0.1 & {14.3} $\pm$ 0.2 & {32.8} $\pm$ 0.0` where 12.2, 14.3 and 32.8 are the means of MISE, DPE and PE and 0.1, 0.2, and 0.0 are the standard deviations of MISE, DPE and PE, respectively.
     - See the step-by-step instructions below to reproduce each reported result.
+    - If the `./run_results.sh` script produces errors, one or multiple of your runs may have failed to complete successfully. You can check the run's `run.txt` file to see whether there have been any errors.
 - You can reproduce the figures in our manuscript using the R-scripts in `drnet/visualisation/`.
 
 ##### News-2/News-4/News-8/News-16
