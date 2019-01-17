@@ -57,7 +57,6 @@ License: MIT, see LICENSE.txt
 - Create a folder to hold the experimental results `mkdir -p results`.
 - Run `python ./drnet/apps/run_all_experiments.py ./drnet/apps news ./data ./results`
     - The script will print all the command line configurations (260 in total) you need to run to obtain the experimental results to reproduce the News results.
-    - Note that we evaluate all listed methods on News-2/News-4/News-8/News-16.
 - Run all of the printed command line configurations from the previous step in a compute environment of your choice.
 - After the experiments have concluded, use `./run_results.sh` to calculate the summary metrics over the repeated runs in LaTeX syntax.
     - Use `./run_results.sh ./results/drnet_news2a10k_{METHOD_NAME}_mse_1`, where {METHOD_NAME} should be replaced with the shorthand code of the method for which you wish to read out the result metrics.
