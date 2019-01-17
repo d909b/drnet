@@ -70,7 +70,7 @@ License: MIT, see LICENSE.txt
 - Navigate to the directory containing this file.
 - Create a folder to hold the experimental results `mkdir -p results`.
 - Run `python ./drnet/apps/run_all_experiments.py ./drnet/apps icu ./data ./results`
-    - The script will print all the command line configurations (65 in total) you need to run to obtain the experimental results to reproduce the IHDP results.
+    - The script will print all the command line configurations (65 in total) you need to run to obtain the experimental results to reproduce the MVICU results.
 - Run all of the printed command line configurations from the previous step in a compute environment of your choice.
 - After the experiments have concluded, use `./run_results.sh` to calculate the summary metrics over the repeated runs in LaTeX syntax.
     - Example 1: `./run_results.sh ./results/drnet_icu3a10k_cf_mse_1` to get the results for "CF" on MVICU.
@@ -83,13 +83,12 @@ License: MIT, see LICENSE.txt
 - Navigate to the directory containing this file.
 - Create a folder to hold the experimental results `mkdir -p results`.
 - Run `python ./drnet/apps/run_all_experiments.py ./drnet/apps tcga ./data ./results`
-    - The script will print all the command line configurations (50 in total) you need to run to obtain the experimental results to reproduce the Jobs results.
+    - The script will print all the command line configurations (50 in total) you need to run to obtain the experimental results to reproduce the TCGA results.
 - Run all of the printed command line configurations from the previous step in a compute environment of your choice.
 - After the experiments have concluded, use `./run_results.sh` to calculate the summary metrics over the repeated runs in LaTeX syntax.
-    - Example 1: `./run_results.sh ./results/drnet_tcga3a10k_pbm_mse_1`, where `jobs` indicates that you want results for the jobs dataset, to get the results for "PM" on Jobs.
-    - Example 2: `./run_results.sh ./results/drnet_tcga3a10k_pbm_mahal_mse_1` to get the results for "+ Wasserstein" on TCGA.
-    - Example 3: `./run_results.sh ./results/drnet_tcga3a10k_no_tarnet_mse_1` to get the results for "MLP" on TCGA.
-    - Example 4: `./run_results.sh ./results/drnet_tcga3a10k_gps_mse_1` to get the results for "GPS" on TCGA.
+    - Example 1: `./run_results.sh ./results/drnet_tcga3a10k_pbm_mahal_mse_1` to get the results for "+ Wasserstein" on TCGA.
+    - Example 2: `./run_results.sh ./results/drnet_tcga3a10k_no_tarnet_mse_1` to get the results for "MLP" on TCGA.
+    - Example 3: `./run_results.sh ./results/drnet_tcga3a10k_gps_mse_1` to get the results for "GPS" on TCGA.
     - Repeat for all evaluated method / benchmark combinations.
 
 ##### Number of Dosage Strata (Figure 2)
@@ -97,7 +96,7 @@ License: MIT, see LICENSE.txt
 - Navigate to the directory containing this file.
 - Create a folder to hold the experimental results `mkdir -p results`.
 - Run `python ./drnet/apps/run_all_experiments.py ./drnet/apps icu_exposure ./data ./results`
-    - The script will print all the command line configurations (5 in total) you need to run to obtain the experimental results to reproduce the News results.
+    - The script will print all the command line configurations (5 in total) you need to run to obtain the experimental results to reproduce the  results in Figure 2.
 - Run all of the printed command line configurations from the previous step in a compute environment of your choice.
 - After the experiments have concluded, use `./run_results.sh` to calculate the summary metrics over the repeated runs in LaTeX syntax.
     - Example 1: `./run_results.sh ./results/drnet_icu3a10k2e_tarnet_mse_1`, where `2e` indicates 2 dosage strata, to get the results for "DRNet" on MVICU with 2 dosage strata.
@@ -110,7 +109,7 @@ License: MIT, see LICENSE.txt
 - Navigate to the directory containing this file.
 - Create a folder to hold the experimental results `mkdir -p results`.
 - Run `python ./drnet/apps/run_all_experiments.py ./drnet/apps news_treatment_assignment_bias ./data ./results`
-    - The script will print all the command line configurations (28 in total) you need to run to obtain the experimental results to reproduce the News results.
+    - The script will print all the command line configurations (28 in total) you need to run to obtain the experimental results to reproduce the  results in Figure 3.
 - Run all of the printed command line configurations from the previous step in a compute environment of your choice.
 - After the experiments have concluded, use `./run_results.sh` to calculate the summary metrics over the repeated runs in LaTeX syntax.
     - Example 1: `./run_results.sh ./results/drnet_news2a5k_gps_mse_1`, where `5k` indicates kappa=5, to get the results for "GPS" on News-2 with treatment assignment bias factor kappa set to 5.
@@ -124,7 +123,7 @@ License: MIT, see LICENSE.txt
 - Navigate to the directory containing this file.
 - Create a folder to hold the experimental results `mkdir -p results`.
 - Run `python ./drnet/apps/run_all_experiments.py ./drnet/apps tcga_confounding ./data ./results`
-    - The script will print all the command line configurations (2 in total) you need to run to obtain the experimental results to reproduce the TCGA results.
+    - The script will print all the command line configurations (2 in total) you need to run to obtain the experimental results to reproduce the  results in Figure 4.
 - Run all of the printed command line configurations from the previous step in a compute environment of your choice.
 - After the experiments have concluded, use `./run_results.sh` to calculate the summary metrics over the repeated runs in LaTeX syntax.
     - Example 1: `./run_results.sh ./results/drnet_tcga3a10k10265f_tarnet_mse_1`, where `10265f` indicates the use of 10265 features (out of the original 20531), to get the results for "DRNet" with 50% hidden confounding on TCGA.
