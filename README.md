@@ -39,7 +39,7 @@ License: MIT, see LICENSE.txt
 
 #### Reproducing the experiments
 
-- Make sure you have the necessary requirements listed above.
+- Make sure you have the necessary requirements listed above, including a `./data` directory relative to this file with the required databases (see above).
 - You can use the script `drnet/apps/run_all_experiments.py` to obtain the exact parameters used with `main.py` to reproduce the experimental results in the paper.
     - The `drnet/apps/run_all_experiments.py` script prints the command line parameters that have to be executed to reproduce the experiments, one command per line.
     - The `drnet/apps/run_all_experiments.py` script only prints the command line parameters - they are not executed automatically. You must execute them manually using your compute platform of choice. You can test individual commands by pasting them into the console.
