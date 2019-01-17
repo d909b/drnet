@@ -41,10 +41,12 @@ License: MIT, see LICENSE.txt
 
 - Make sure you have the necessary requirements listed above.
 - You can use the script `drnet/apps/run_all_experiments.py` to obtain the exact parameters used with `main.py` to reproduce the experimental results in the paper.
-    - The `drnet/apps/run_all_experiments.py` script prints the command line parameters that have to be run to reproduce the experiments, one command per line.
-    - Note that we ran hundreds of experiments using multiple CPU months of computation time. We therefore suggest to run the commands in parallel using, e.g., a compute cluster.
-    - The original experiments reported in our paper were run on Intel CPUs. We found that running the experiments on GPUs can produce slightly different results for the same experiments.
-    - Once you have completed the experiments, you can calculate the summary statistics (mean +- standard deviation) over all the repeated runs using the `./run_results.sh` script. The results are reported in LaTeX syntax in the order reported in the results tables, i.e. `{12.2} $\pm$ 0.1 & {14.3} $\pm$ 0.2 & {32.8} $\pm$ 0.0` where 12.2, 14.3 and 32.8 are the means of MISE, DPE and PE and 0.1, 0.2, and 0.0 are the standard deviations of MISE, DPE and PE, respectively.
+    - The `drnet/apps/run_all_experiments.py` script prints the command line parameters that have to be executed to reproduce the experiments, one command per line.
+    - The `drnet/apps/run_all_experiments.py` script only prints the command line parameters - they are not executed automatically. You must execute them manually using your compute platform of choice. You can test individual commands by pasting them into the console.
+        - The time required to complete a single command can range from an hour to multiple days of CPU time, depending on the model being evaluated.
+        - Note that we ran hundreds of experiments using multiple CPU months of computation time. We therefore suggest to run the commands in parallel using, e.g., a compute cluster.
+        - The original experiments reported in our paper were run on Intel CPUs. We found that running the experiments on GPUs can produce slightly different results for the same experiments.
+- Once you have completed the experiments, you can calculate the summary statistics (mean +- standard deviation) over all the repeated runs using the `./run_results.sh` script. The results are reported in LaTeX syntax in the order reported in the results tables, i.e. `{12.2} $\pm$ 0.1 & {14.3} $\pm$ 0.2 & {32.8} $\pm$ 0.0` where 12.2, 14.3 and 32.8 are the means of MISE, DPE and PE and 0.1, 0.2, and 0.0 are the standard deviations of MISE, DPE and PE, respectively.
     - See the step-by-step instructions below to reproduce each reported result.
 - You can reproduce the figures in our manuscript using the R-scripts in `drnet/visualisation/`.
 
