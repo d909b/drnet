@@ -179,7 +179,7 @@ class EvaluationApplication(object):
                 return "--" + k + "=" + str(args[k])
 
         gpu_requested = "-R \"rusage[ngpus_excl_p=1]\"" if is_gpu else ""
-        extra_resources = "-R \"rusage[mem=16000,scratch=11000]\" {gpu_requested} -n 4 -W 120:00"\
+        extra_resources = "-R \"rusage[mem=16000,scratch=11000]\" {gpu_requested} -n 4 -W 120:00" \
             .format(gpu_requested=gpu_requested)
         sub_command = "python " + join(this_directory, "main.py")
         arguments = " ".join([arg_for_key_value(k, args[k]) for k in args])
@@ -187,9 +187,8 @@ class EvaluationApplication(object):
         bash_profile = "~/.gpu_bash_profile" if is_gpu else "~/.bash_profile"
 
         command = "bsub {extra_resources} {dependencies} -N -o {log_file} /bin/bash -c " \
-                  "\"source ~/bin/gan_demand_forecast/venv/bin/activate && " \
-                  "source {bash_profile} &&cd ~/bin/subtyping && " \
-                  "export PYTHONPATH=\$(pwd):~/bin/gan_demand_forecast/venv/lib64/python2.7/site-packages:\$PYTHONPATH && " \
+                  "\"source ~/venv/bin/activate && " \
+                  "source {bash_profile} && cd ~/bin/ && " \
                   "{sub_command} {arguments}\"".format(sub_command=sub_command,
                                                        arguments=arguments,
                                                        log_file=log_file,
