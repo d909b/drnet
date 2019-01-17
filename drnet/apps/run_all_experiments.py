@@ -374,6 +374,9 @@ def run(DATASET, DATASET_PATH, OUTPUT_FOLDER, SUB_COMMAND, LOG_FILE):
             extra_commands = ""
             if exposure:
                 extra_commands += command_params_exposure
+                print(extra_commands)
+            else:
+                print("NO EXPOSURE")
 
             name = "drnet_{DATASET}{NUM_TREATMENTS}a{KAPPA}k{EXP_STRATA}{PBM_P}{TCGA}_{MODEL_TYPE}_{EARLY_STOPPING_TYPE}_{BATCH_NUMBER}" \
                 .format(DATASET=DATASET,
