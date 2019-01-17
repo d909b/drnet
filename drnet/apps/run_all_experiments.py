@@ -299,6 +299,8 @@ def get_dataset_params(DATASET, is_exposure=True):
     if exposures is None:
         exposures = [is_exposure]*len(kappa_set)
 
+    print(exposures)
+
     if num_exposure_stratas is None:
         num_exposure_stratas = [DEFAULT_EXPOSURE_STRATA]*len(model_set)
 
