@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # The root folder for which to calculate the summary measures for a given model,
 # e.g. /some/directory/pm_news16a7k_cfrnet_mse_1
