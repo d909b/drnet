@@ -2,7 +2,7 @@
 
 Dose response networks (DRNets) are a method for learning to estimate individual dose-response curves for multiple parametric treatments from observational data using neural networks. This repository contains the source code used to evaluate DRNets and the most relevant existing state-of-the-art methods for estimating individual treatment effects. In order to facilitate future research, the source code is designed to be easily extensible with (1) new methods and (2) new benchmark datasets.
 
-Author(s): Patrick Schwab, ETH Zurich <patrick.schwab@hest.ethz.ch>, Lorenz Linhardt, ETH Zurich <llorenz@student.ethz.ch>, Stefan Bauer, MPI for Intelligent Systems <stefan.bauer@tuebingen.mpg.de>, and Walter Karlen, ETH Zurich <walter.karlen@hest.ethz.ch>
+Authors: Anonymised
 
 License: MIT, see LICENSE.txt
 
@@ -28,7 +28,7 @@ License: MIT, see LICENSE.txt
 - To run the MVICU benchmark, you need to get access to the [MIMIC-III database](https://mimic.physionet.org/) which requires going through an [approval process](https://mimic.physionet.org/gettingstarted/access/), due to the sensitive nature of the dataset.
     - Note that you need around 75GB of free disk space to store the MIMIC-III database with indices.
     - Once you have access to the dataset and loaded the MIMIC-III data into an SQLite database (saved as e.g. `/your/path/to/mimic3.db`), you can use the `drnet/apps/load_db_icu.py` script to extract the MVICU benchmark data from the MIMIC-III database into a separate database in the `./data` folder by running:
-        - `python drnet/apps/load_db_icu.py /your/path/to/mimic3.db ./data` 
+        - `python drnet/apps/load_db_icu.py /your/path/to/mimic3.db ./data`
         - Once built, the benchmark database uses around 43MB of disk space.
 - To run BART, Causal Forests and GPS, and to reproduce the figures you need to have [R](https://www.r-project.org/) installed. See https://www.r-project.org/ for installation instructions.
     - To run BART, you need to have the R-packages `rJava` and `bartMachine` installed. See https://github.com/kapelner/bartMachine for installation instructions. Note that `rJava` requires a working Java installation as well.

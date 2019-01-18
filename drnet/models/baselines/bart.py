@@ -1,5 +1,5 @@
 """
-Copyright (C) 2019  Patrick Schwab, ETH Zurich
+Copyright (C) 2019  anonymised author, anonymised institution
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -35,7 +35,6 @@ class BayesianAdditiveRegressionTrees(Baseline):
 
         robjects.r.options(download_file_method='curl')
 
-        # install.packages("rJava", configure.vars="LDFLAGS=-L/cluster/home/schwabpa/rpy2/thirdparty/lib")
         rj = importr("rJava", robject_translations={'.env': 'rj_env'})
         rj._jinit(parameters="-Xmx16g", force_init=True)
         print("rJava heap size is", np.array(rj._jcall(rj._jnew("java/lang/Runtime"), "J", "maxMemory"))[0] / 1e9,
