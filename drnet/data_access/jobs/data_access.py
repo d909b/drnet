@@ -47,7 +47,6 @@ class DataAccess(BaseDataAccess):
         train_set = np.load(train_file_path)
         test_set = np.load(test_file_path)
 
-        # TODO: Remove experiment_index for this & add evaluation routines (policy val / ATT).
         def get_field(name, squeeze=False):
             return np.concatenate([train_set[name],
                                    test_set[name]], axis=0)

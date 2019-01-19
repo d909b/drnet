@@ -19,8 +19,8 @@ generateIHDP <- function(iter, output_dir, setting = "A") {
 	verbose <- FALSE
 	require(npci, quietly=TRUE)
 
-	setwd("/home/d909b/thirdparty/npci/examples/ihdp_sim/")
-	source("/home/d909b/thirdparty/npci/examples/ihdp_sim/results.R")
+	setwd("/path/to/npci/examples/ihdp_sim/")
+	source("/path/to/npci/examples/ihdp_sim/results.R")
 
 	opt <- list()
 	L <- list()
@@ -32,7 +32,7 @@ generateIHDP <- function(iter, output_dir, setting = "A") {
 	L.1 <- list()
 	x.0.1 <- list()
 
-	source("/home/d909b/thirdparty/npci/examples/ihdp_sim/data.R")
+	source("/path/to/npci/examples/ihdp_sim/data.R")
 	loadDataInCurrentEnvironment(covariates, p.score)
 
 	w <- 0.5
