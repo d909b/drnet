@@ -130,34 +130,3 @@ def wasserstein(X, t, p=0.5, lam=10, its=10, sq=False, backpropT=True, num_treat
         lambda: calculate_distances(X, t, ic, p, lam, its, sq, backpropT, num_treatments)
     )
     return total_D[0]
-
-
-def calculate_triple_distances(X, t, ic, num_treatments, triplet_model):
-    Xc = tf.gather(X, ic)
-
-    # Gather the treatment distributions.
-    total_D = tf.zeros((1,))
-    for i in range(1, num_treatments):
-        it = tf.where(tf.equal(t, i))[:, 0]
-        is_empty = tf.equal(tf.size(it), 0)
-        Xt = tf.gather(X, it)
-
-        D = tf.cond(
-            is_empty,
-            lambda: tf.zeros((1,)),
-            lambda: triplet_model([Xt, Xt, Xc])[0]
-        )
-        total_D += D
-
-    return total_D
-
-
-def triplet(x, t, num_treatments, triplet_model):
-    ic = tf.where(tf.equal(t, 0))[:, 0]
-    is_empty = tf.equal(tf.size(ic), 0)
-    total_D = tf.cond(
-        is_empty,
-        lambda: tf.zeros((1,)),
-        lambda: calculate_triple_distances(x, t, ic, num_treatments, triplet_model)
-    )
-    return total_D[0]
