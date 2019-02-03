@@ -4,7 +4,7 @@
 
 Dose response networks (DRNets) are a method for learning to estimate individual dose-response curves for multiple parametric treatments from observational data using neural networks. This repository contains the source code used to evaluate DRNets and the most relevant existing state-of-the-art methods for estimating individual treatment effects (for results please see [our manuscript](https://arxiv.org/abs/xxxx.xxxx)). In order to facilitate future research, the source code is designed to be easily extensible with (1) new methods and (2) new benchmark datasets.
 
-Author(s): Patrick Schwab, ETH Zurich <patrick.schwab@hest.ethz.ch>, Lorenz Linhardt, ETH Zurich <llorenz@student.ethz.ch>, Stefan Bauer, MPI for Intelligent Systems <stefan.bauer@tuebingen.mpg.de>, Joachim M. Buhmann <jbuhmann@inf.ethz.ch> and Walter Karlen, ETH Zurich <walter.karlen@hest.ethz.ch>
+Author(s): Patrick Schwab, ETH Zurich <patrick.schwab@hest.ethz.ch>, Lorenz Linhardt, ETH Zurich <llorenz@student.ethz.ch>, Stefan Bauer, MPI for Intelligent Systems <stefan.bauer@tuebingen.mpg.de>, Joachim M. Buhmann, ETH Zurich <jbuhmann@inf.ethz.ch> and Walter Karlen, ETH Zurich <walter.karlen@hest.ethz.ch>
 
 License: MIT, see LICENSE.txt
 
