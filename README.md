@@ -1,10 +1,23 @@
 ## Learning Counterfactual Representations for Estimating Individual Dose-Response Curves
 
-Dose response networks (DRNets) are a method for learning to estimate individual dose-response curves for multiple parametric treatments from observational data using neural networks. This repository contains the source code used to evaluate DRNets and the most relevant existing state-of-the-art methods for estimating individual treatment effects. In order to facilitate future research, the source code is designed to be easily extensible with (1) new methods and (2) new benchmark datasets.
+![DRNet](http://schwabpatrick.com/img/drnet.png)
+
+Dose response networks (DRNets) are a method for learning to estimate individual dose-response curves for multiple parametric treatments from observational data using neural networks. This repository contains the source code used to evaluate DRNets and the most relevant existing state-of-the-art methods for estimating individual treatment effects (for results please see [our manuscript](https://arxiv.org/abs/xxxx.xxxx)). In order to facilitate future research, the source code is designed to be easily extensible with (1) new methods and (2) new benchmark datasets.
 
 Author(s): Patrick Schwab, ETH Zurich <patrick.schwab@hest.ethz.ch>, Lorenz Linhardt, ETH Zurich <llorenz@student.ethz.ch>, Stefan Bauer, MPI for Intelligent Systems <stefan.bauer@tuebingen.mpg.de>, Joachim M. Buhmann <jbuhmann@inf.ethz.ch> and Walter Karlen, ETH Zurich <walter.karlen@hest.ethz.ch>
 
 License: MIT, see LICENSE.txt
+
+#### Citation
+
+If you reference or use our methodology, code or results in your work, please consider citing:
+
+    @article{schwab2019drnet,
+      title={{Learning Counterfactual Representations for Estimating Individual Dose-Response Curves}},
+      author={Schwab, Patrick and Linhardt, Lorenz and Bauer, Stefan and Buhmann, Joachim and Karlen, Walter},
+      journal={arXiv preprint arXiv:xxxx.xxxx},
+      year={2019}
+    }
 
 #### Usage:
 
