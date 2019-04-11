@@ -218,8 +218,8 @@ def get_tcga_config():
     num_repeats = DEFAULT_NUM_REPEATS
     treatment_set = [3]
     kappa_set = [10]
-    # "knn", "cf" and "bart" are too slow for this number of features.
-    model_set = set(ALL_MODELS) - {"knn", "cf", "bart"}
+    # "knn" and "bart" are too slow for this number of features.
+    model_set = set(ALL_MODELS) - {"knn", "bart"}
     es_set = ["mse"]*len(model_set)
     pbm_percentages = [1.0]*len(es_set)
     return num_hyperopt_runs, num_epochs, early_stopping_patience, num_repeats, treatment_set, \
