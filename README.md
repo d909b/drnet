@@ -99,7 +99,7 @@ If you reference or use our methodology, code or results in your work, please co
 - Create a folder to hold the experimental results `mkdir -p results`.
 - Run `python ./drnet/apps/run_all_experiments.py ./drnet/apps tcga ./data ./results`
     - The script will print all the command line configurations (50 in total) you need to run to obtain the experimental results to reproduce the TCGA results.
-    - Unlike the other benchmarks, the TCGA script does not create commands for "knn", "cf" and "bart" because evaluating those methods with this high number of features is  computationally very expensive.
+    - Unlike the other benchmarks, the TCGA script does not create commands for "knn" and "bart" because evaluating those methods with this high number of features is  computationally very expensive.
 - Run all of the printed command line configurations from the previous step in a compute environment of your choice.
 - After the experiments have concluded, use `./run_results.sh` to calculate the summary metrics over the repeated runs in LaTeX syntax.
     - Example 1: `./run_results.sh ./results/drnet_tcga3a10k_pbm_mahal_mse_1` to get the results for "+ Wasserstein" on TCGA.
