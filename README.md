@@ -12,11 +12,11 @@ License: MIT, see LICENSE.txt
 
 If you reference or use our methodology, code or results in your work, please consider citing:
 
-    @article{schwab2019drnet,
+    @inproceedings{schwab2020doseresponse,
       title={{Learning Counterfactual Representations for Estimating Individual Dose-Response Curves}},
-      author={Schwab, Patrick and Linhardt, Lorenz and Bauer, Stefan and Buhmann, Joachim and Karlen, Walter},
-      journal={arXiv preprint arXiv:1902.00981},
-      year={2019}
+      author={Schwab, Patrick and Linhardt, Lorenz and Bauer, Stefan and Buhmann, Joachim M and Karlen, Walter},
+      booktitle={{AAAI Conference on Artificial Intelligence}},
+      year={2020}
     }
 
 #### Usage:
