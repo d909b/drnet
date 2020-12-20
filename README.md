@@ -35,7 +35,7 @@ If you reference or use our methodology, code or results in your work, please co
 - This project was designed for use with Python 2.7. We can not guarantee and have not tested compatibility with Python 3.
 
 - To run the TCGA and News benchmarks, you need to download the SQLite databases containing the raw data samples for these benchmarks (`news.db` and `tcga.db`).
-    - You can download the raw data using these links: [tcga.db](https://polybox.ethz.ch/index.php/s/OrwKOXHToZfxVyE) and [news.db](https://polybox.ethz.ch/index.php/s/fRQZREF528AfD5Z).
+    - You can download the raw data using these links: [tcga.db](https://paperdatasets.s3.amazonaws.com/tcga.db) and [news.db](https://paperdatasets.s3.amazonaws.com/news.db).
         - Note that you need around 10GB of free disk space to store the databases.
     - Save the database files to the `./data` directory relative to this file in order to be compatible with the step-by-step guides below or adjust the commands accordingly.
 - To run the MVICU benchmark, you need to get access to the [MIMIC-III database](https://mimic.physionet.org/) which requires going through an [approval process](https://mimic.physionet.org/gettingstarted/access/), due to the sensitive nature of the dataset.
