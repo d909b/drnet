@@ -33,7 +33,7 @@ setup(
     license=open('LICENSE.txt').read(),
     long_description=open('README.md').read(),
     install_requires=[
-        "Keras >= 1.2.2",
+        "Keras == 2.0.0",
         "tensorflow == 1.4.0",
         "matplotlib >= 1.3.1",
         "pandas >= 0.18.0",
